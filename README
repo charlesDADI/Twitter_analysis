@@ -1,0 +1,26 @@
+Before using the python code you should create a database :
+mysql -u > create database twitter
+mysql >use twitter
+
+Then you should create two identical tables tweets, tweetsTemp:
+
+
++------------------+--------------+------+-----+---------+----------------+
+| Field            | Type         | Null | Key | Default | Extra          |
++------------------+--------------+------+-----+---------+----------------+
+| tweet_keyword    | varchar(50)  | YES  |     | NULL    |                |
+| tweet            | varchar(200) | YES  |     | NULL    |                |
+| user             | varchar(50)  | YES  |     | NULL    |                |
+| lang             | varchar(50)  | YES  |     | NULL    |                |
+| geo              | varchar(50)  | YES  |     | NULL    |                |
+| tweet_datetime   | datetime     | YES  |     | NULL    |                |
+| id               | bigint(20)   | NO   | PRI | NULL    | auto_increment |
+| tweet_id         | varchar(50)  | YES  |     | NULL    |                |
+| url              | varchar(200) | YES  |     | NULL    |                |
+| hashtags         | varchar(100) | YES  |     | NULL    |                |
+| retweet_count    | int(11)      | YES  |     | NULL    |                |
+| user_description | varchar(300) | YES  |     | NULL    |                |
+| user_friend      | int(11)      | YES  |     | NULL    |                |
+| retweet_origin   | varchar(200) | YES  |     | NULL    |                |
++------------------+--------------+------+-----+---------+----------------+
+
